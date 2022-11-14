@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="davis_grey">#635C51</color>
+    <color name="gren_pastel">#C4DFAA</color>
+    <color name="english_violet">#39304A</color>
+    <color name="raisin_black">#202030</color>
+    <color name="khaki_web">#B0A990</color>
+    <color name="shadow">#7D7461</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="light_red">#EF4B4C</color>
+    <color name="grey_blue">#42506B</color>
+    <color name="blue_mid">#3E619B</color>
+    <color name="grey">#E9E9EB</color>
+    <color name="black_mid">#17181C</color>
+
+    <color name="gray">#9BA5C9</color>
+    <color name="white_mid">#F5F6FB</color>
+
+</resources>

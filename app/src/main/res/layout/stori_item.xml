@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="6dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="6dp"
+    app:cardMaxElevation="6dp"
+    app:cardCornerRadius="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:transitionName="photo"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:background="@drawable/bg_small_view"
+            app:layout_constraintBottom_toBottomOf="@id/iv_foto"
+            app:layout_constraintEnd_toEndOf="@id/iv_foto"
+            app:layout_constraintStart_toStartOf="@id/iv_foto"
+            app:layout_constraintTop_toTopOf="@id/tv_name"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:transitionName="name"
+            android:drawablePadding="4dp"
+            android:layout_marginStart="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnPrimary"
+            app:drawableStartCompat="@drawable/ic_profile"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintBottom_toTopOf="@id/tv_createdAt"
+            tools:text="username" />
+        <TextView
+            android:id="@+id/tv_createdAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnPrimary"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            tools:text="12-feb-2022 | 12:04" />
+
+        <ImageView
+            android:id="@+id/iv_pinMap"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:padding="6dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_pin_drop_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_createdAt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

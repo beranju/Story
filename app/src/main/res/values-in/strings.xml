@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Story App</string>
+    <string name="register">Daftar</string>
+    <string name="email_error">Email tidak valid</string>
+    <string name="password_error">Password tidak valid</string>
+    <string name="error_name">Nama harus diisi</string>
+    <string name="logout">Keluar</string>
+    <string name="email_not_valid">Email tidak valid</string>
+    <string name="text_login">Masuk</string>
+    <string name="text_no_akun">belum punya akun</string>
+    <string name="hint_name">masukkan name</string>
+    <string name="text_punya_akun">Sudah Punya Akun</string>
+    <string name="hint_password">Masukkan password</string>
+    <string name="hint_email">Masukkan email</string>
+    <string name="text_no_permission">Tidak mendapatkan permission</string>
+    <string name="error_no_picture">Silahkan masukkan gambar dulu</string>
+    <string name="hint_deskripsi">Masukkan deskripsi</string>
+    <string name="text_galery">Galeri</string>
+    <string name="tect_camera">Kamera</string>
+    <string name="text_unggah">Unggah</string>
+    <string name="text_language">Bahasa</string>
+
+</resources>

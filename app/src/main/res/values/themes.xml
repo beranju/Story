@@ -1,0 +1,35 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.MyStoryApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/english_violet</item>
+        <item name="colorPrimaryVariant">@color/raisin_black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/khaki_web</item>
+        <item name="colorSecondaryVariant">@color/shadow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MyStoryApp.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">?attr/colorPrimary</item>
+
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.MyStoryApp</item>
+    </style>
+
+    <style name="Theme.MyStoryApp.Starting.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyStoryApp.Starting.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MyStoryApp.Starting.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

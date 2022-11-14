@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment">
+
+    <ProgressBar
+        android:id="@+id/pb_detail"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:progress="1"
+        android:progressTint="@color/gren_pastel"
+        app:layout_constraintBottom_toTopOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_foto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:transitionName="photo"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:transitionName="name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pb_detail"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_createdAt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:textSize="12sp"
+        android:transitionName="name"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/iv_foto"
+        tools:text="12-feb-2022| 12:05" />
+
+    <ImageView
+        android:id="@+id/go_to_map"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:padding="12dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_btn_circle"
+        android:src="@drawable/ic_baseline_pin_drop_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_createdAt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pb_detail" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_big_view"
+        app:layout_constraintEnd_toEndOf="@+id/tv_description"
+        app:layout_constraintStart_toStartOf="@+id/tv_description"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_description"
+        app:layout_constraintTop_toTopOf="@+id/tv_description"
+        />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12dp"
+        android:autoSizeMaxTextSize="24dp"
+        android:paddingVertical="8dp"
+        tools:text="fd;kga adlgajgasdog adgjasdglas sdgljsdgjsjg dsgdkadg;jssg adgkla"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

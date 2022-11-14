@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Story App</string>
+    <string name="register">Register</string>
+    <string name="email_error">Invalid email</string>
+    <string name="password_error">Invalid Password</string>
+    <string name="error_name">Name is required</string>
+    <string name="logout">Logout</string>
+    <string name="email_not_valid">Invalid email</string>
+    <string name="text_login">LOGIN</string>
+    <string name="text_no_akun">don\'t have an account yet</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="text_punya_akun">already have an account</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="text_no_permission">Not getting permission</string>
+    <string name="error_no_picture">Image field is required</string>
+    <string name="hint_deskripsi">Description field is required</string>
+    <string name="text_galery">Galery</string>
+    <string name="tect_camera">Camera</string>
+    <string name="text_unggah">Upload</string>
+    <string name="text_language">Language</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>

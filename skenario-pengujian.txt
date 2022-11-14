@@ -1,0 +1,51 @@
+# Skenario pengujian pada aplikasi story sebagai submission akhir pada modul android intermidiate. 
+
+## Pengujian yang dilakukan adalah unit-test pada setiap ViewModel.
+
+
+### Daftar Pengujian
+
+1. Skenario Unit test SignupViewModelTest
+
+a. Ketika berhasil signup,
+- Memastikan mengembalikan SimpleResult.success
+b. ketika gagal signup,
+- Memastikan mengembalikan SimpleResult.Error
+
+
+2. Skenario LoginViewModelTest
+a. Ketika Berhasil login
+- Memastikan mengembalikan BaseResult.Success
+- Memastikan terdapat user
+
+b, Ketika Gagal Login
+- Memastikan mengembalikan BaseResult.Error
+
+
+3. Skenario HomeViewModelTest
+a. berhasil getStory
+- Memastikan mengembalikan BaseResult.Success
+- Memastikan story tidak null
+- Memastikan jumlah sesuai yang diharapkan
+b. Gagal getStory
+- Memastikan menampilakan BaseResult.Error
+
+4. Skenario StoryRemoteMediatorTest
+Ketika data selanjutnya ada.
+- Memastikan fungsi load mengembalikan RemoteMediator.MediatorResult.Success.
+- Memastikan jumlah endOfPaginationReached bernilai false.
+
+5. Skenario DetailViewModelTest
+a. berhasil getStory
+- Memastikan mengembalikan BaseResult.Success
+- Memastikan story tidak null
+b. Gagal getStory
+- Memastikan menampilakan BaseResult.Error
+
+6. Skenario MapViewModelTest
+a. berhasil getStory
+- Memastikan mengembalikan BaseResult.Success
+- Memastikan story tidak null
+b. Gagal getStory
+- Memastikan menampilakan BaseResult.Error
+
